@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dead Reckoning Data Collector</title>
+    <script type="module" crossorigin src="/assets/index-Bz2we8sd.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-pJiJccL0.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Dead Reckoning Data Collector</h1>
+      </header>
+      
+      <main>
+        <section class="controls">
+          <button id="start-btn">Start Recording</button>
+          <button id="stop-btn" disabled>Stop Recording</button>
+          <button id="export-json-btn">Export JSON</button>
+          <button id="export-csv-btn">Export CSV</button>
+          <button id="clear-data-btn">Clear Data</button>
+        </section>
+        
+        <section class="status">
+          <div class="status-item">
+            <span>Recording: </span>
+            <span id="recording-status">Stopped</span>
+          </div>
+          <div class="status-item">
+            <span>Data Points: </span>
+            <span id="data-count">0</span>
+          </div>
+          <div class="status-item">
+            <span>Storage Used: </span>
+            <span id="storage-size">0 KB</span>
+          </div>
+        </section>
+        
+        <section class="permissions">
+          <div class="permission-item">
+            <span>Motion Sensors: </span>
+            <span id="motion-permission">Not granted</span>
+          </div>
+          <div class="permission-item">
+            <span>Location: </span>
+            <span id="location-permission">Not granted</span>
+          </div>
+        </section>
+        
+        <section class="data-preview">
+          <h3>Latest Data</h3>
+          <pre id="data-display">No data collected yet</pre>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
